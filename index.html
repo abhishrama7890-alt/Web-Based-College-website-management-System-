@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mahyco Research Foundation Trust's'Badrinarayan Barwale Mahavidyalaya, Jalna</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0;
+font-family:Segoe UI;
+background:#f4f6f9;
+color:#333;
+}
+
+header{
+background:linear-gradient(90deg,#004aad,#1a73e8);
+color:white;
+padding:20px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+background:#007bff;
+padding:10px;
+gap:8px;
+}
+
+nav button{
+background:linear-gradient(45deg,#4facfe,#00f2fe);
+border:none;
+color:white;
+padding:10px 14px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+section{display:none;padding:20px;}
+.active{display:block;}
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button.submit{
+width:100%;
+padding:12px;
+background:linear-gradient(45deg,#4facfe,#00f2fe);
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.admin-btn{
+padding:6px 10px;
+margin:5px 5px 5px 0;
+border:none;
+border-radius:6px;
+cursor:pointer;
+color:white;
+}
+
+.approve{background:green;}
+.delete{background:red;}
+
+.notice-box{
+height:80px;
+overflow:hidden;
+position:relative;
+}
+
+.notice-text{
+position:absolute;
+animation:scrollUp 10s linear infinite;
+}
+
+@keyframes scrollUp{
+0%{top:100%;}
+100%{top:-100%;}
+}
+
+footer{
+text-align:center;
+padding:15px;
+background:#eee;
+}
+
+</style>
+</head>
+<body>
+
+<header>🏫 Badrinarayan Barwale Mahavidyalaya, Jalna</header>
+
+<nav>
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('about')">About</button>
+<button onclick="showPage('courses')">Courses</button>
+<button onclick="showPage('faculty')">Faculty</button>
+<button onclick="showPage('student')">Student Registration</button>
+<button onclick="showPage('contact')">Contact</button>
+<button onclick="showPage('login')">Admin</button>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="active">
+
+<div class="card">
+
+<img src="IMG_20260123_163511.jpg" 
+style="width:100%; height:380px; object-fit:cover; border-radius:10px; margin-bottom:15px;">
+
+<h3>Welcome to Badrinarayan Barwale Mahavidyalaya</h3>
+
+<p>
+Established in 1993, our college is committed to providing quality higher education 
+in Arts, Science, Commerce and Computer Applications. 
+
+We focus on academic excellence, discipline, innovation, and overall personality development of students.
+</p>
+
+</div>
+
+<div class="card">
+<h3>📢 Notice Board</h3>
+
+<div style="height:120px; overflow:hidden; position:relative; background:#f5f5f5; padding:10px; border-radius:8px;">
+<marquee direction="up" scrollamount="2" height="100%">
+Admissions Open for 2026-27<br><br>
+Scholarship Forms Available<br><br>
+Internal Exam Schedule Released<br><br>
+University Practical Dates Announced<br><br>
+NSS & Cultural Event Registration Started
+</marquee>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="card">
+<h3>About College</h3>
+<p>
+Established in 1993. Affiliated with Dr. Babasaheb Ambedkar Marathwada University, Chhatrapati Sambhajinagar.
+</p>
+<h4>Vision</h4>
+<p>To empower students through quality education and ethics.</p>
+<h4>Mission</h4>
+<ul>
+<li>Provide academic excellence</li>
+<li>Encourage research & innovation</li>
+<li>Develop leadership & social responsibility</li>
+</ul>
+</div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+<div class="card">
+<h3>Undergraduate (UG)</h3>
+<ul>
+<li>B.A</li>
+<li>B.Sc</li>
+<li>B.Sc Computer Science</li>
+<li>B.Sc Biotechnology</li>
+<li>B.Com</li>
+<li>BCA (Science)</li>
+</ul>
+
+<h3>Postgraduate (PG)</h3>
+<ul>
+<li>M.Sc Chemistry</li>
+<li>M.Sc Biotechnology</li>
+</ul>
+</div>
+</section>
+
+<!-- FACULTY -->
+<section id="faculty">
+
+<div class="card">
+<h3>Principal</h3>
+Dr. Kavita Prashar – Principal
+</div>
+
+<div class="card">
+<h3>Department of Computer Science</h3>
+<b>HOD:</b> Prof. Kazi Mam<br>
+<b>Assistant Professors:</b><br>
+Dr. Vaishali Shinde<br>
+Anjali Salva<br>
+<b>Subjects:</b>
+<ul>
+<li>Artificial Intelligence</li>
+<li>Machine Learning</li>
+<li>Cyber Security</li>
+<li>Cloud Computing</li>
+<li>Data Mining</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Department of BCA (Science) </h3>
+<b>HOD:</b> Gayathri N. Kombe<br>
+<b>Assistant Professors:</b><br>
+Kanchan S. Kayande<br>
+Kirti S. Sane<br>
+<b>Subjects:</b>
+<ul>
+<li>Programming in C</li>
+<li>Data Structures</li>
+<li>DBMS</li>
+<li>Java</li>
+<li>Python</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Department of Physics</h3>
+<b>HOD:</b> Dr. Kokne Pravin<br>
+<b>Assistant Professor:</b> Nilesh Barde
+<ul>
+<li>Mechanics</li>
+<li>Thermodynamics</li>
+<li>Quantum Physics</li>
+<li>Electromagnetism</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Department of Chemistry</h3>
+<b>HOD:</b> Dr. Omprakash S. Chavan<br>
+<b>Assistant Professors:</b><br>
+Dr. Ravindra P. Shimpi<br>
+Dr. Bhagwansing S. Dobhal
+<ul>
+<li>Organic Chemistry</li>
+<li>Inorganic Chemistry</li>
+<li>Physical Chemistry</li>
+<li>Environmental Chemistry</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Department of Commerce</h3>
+<b>HOD:</b> Dr. Rameshwar Mhaska<br>
+<b>Assistant Professors:</b><br>
+Dr. Ankita Lahoti<br>
+Dr. Dipti Jain<br>
+<b>Subjects:</b>
+<ul>
+<li>Accountancy</li>
+<li>Business Economics</li>
+<li>Business Law</li>
+<li>Income Tax</li>
+<li>Cost Accounting</li>
+<li>Financial Management</li>
+<li>Banking & Insurance</li>
+<li>Auditing</li>
+<li>Marketing Management</li>
+</ul>
+</div>
+  <div class="card">
+<h3>Bachelor of Arts</h3>
+
+<b>Head of Department (HOD):</b><br>
+Vilas Bhutekar – English<br><br>
+
+<b>History Department:</b>
+<ul>
+<li>Dr. Shinde – Ancient & Modern History</li>
+<li>Dr. Suryawanshi – Indian History</li>
+</ul>
+
+<b>Political Science Department:</b>
+<ul>
+<li>Prof. Walse R. G. – Indian Constitution</li>
+<li>Dr. Katare – Public Administration</li>
+</ul>
+
+<b>Marathi Department:</b>
+<ul>
+<li>Dr. Thorve – Marathi Literature</li>
+</ul>
+
+<b>Hindi Department:</b>
+<ul>
+<li>Prof. Choudhari – Hindi Literature</li>
+</ul>
+
+<b>English Department:</b>
+<ul>
+<li>Vilas Bhutekar – English Literature</li>
+</ul>
+
+<b>Sociology:</b>
+<ul>
+<li>Guest Faculty – Sociology Principles</li>
+</ul>
+
+<b>Economics:</b>
+<ul>
+<li>Assistant Professor – Micro & Macro Economics</li>
+</ul>
+
+<b>Geography:</b>
+<ul>
+<li>Assistant Professor – Physical & Human Geography</li>
+</ul>
+
+</div>
+  <div class="card">
+<h3>Department of Biotechnology</h3>
+
+<b>Assistant Professors:</b><br>
+Dr. Pawan Laxmikant Deshmukh – Assistant Professor<br>
+Mrs. Varsha Bhagwanrao Wankhede – Assistant Professor<br>
+Mr. Rahul Subhash Wakde – Assistant Professor<br><br>
+
+<b>Subjects:</b>
+<ul>
+<li>Cell Biology</li>
+<li>Molecular Biology</li>
+<li>Genetics</li>
+<li>Biochemistry</li>
+<li>Microbiology</li>
+<li>Immunology</li>
+<li>Plant Biotechnology</li>
+<li>Animal Biotechnology</li>
+<li>Environmental Biotechnology</li>
+<li>Bioprocess Technology</li>
+</ul>
+</div>
+
+</section>
+
+<!-- STUDENT REGISTRATION -->
+<section id="student">
+<div class="card">
+<h3>Student Registration</h3>
+
+<input id="sname" placeholder="Full Name">
+<input id="semail" type="email" placeholder="Email">
+<input id="smobile" placeholder="Mobile Number">
+<select id="scourse">
+<option value="">Select Course</option>
+<option>B.A</option>
+<option>B.Sc</option>
+<option>B.Com</option>
+<option>BCA</option>
+<option>M.Sc Chemistry</option>
+<option>M.Sc Biotechnology</option>
+</select>
+
+<label id="captchaText"></label>
+<input id="captchaInput" placeholder="Enter Captcha">
+<button onclick="generateCaptcha()">Refresh Captcha</button>
+
+<button class="submit" onclick="registerStudent()">Register</button>
+
+<p id="regMsg"></p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="card">
+<h3>Contact Information</h3>
+Badrinarayan Barwale Mahavidyalaya,<br>
+Jalna – 431203, Maharashtra<br><br>
+Phone: 02482-XXXXX<br>
+Email: bbmjalna@gmail.com<br><br>
+Office Time: Mon–Sat | 10:00 AM – 5:00 PM
+</div>
+</section>
+
+<!-- LOGIN -->
+<section id="login">
+  <div class="card">
+    <h3>Admin Login</h3>
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password" />
+    <button class="submit" onclick="adminLogin()">Login</button>
+    <p id="loginMsg" style="color:red;"></p>
+  </div>
+</section>
+
+<!-- ADMIN PANEL -->
+<section id="admin">
+  <div class="card">
+    <h3>📊 Dashboard</h3>
+    <div id="dashboardStats"></div>
+    <hr>
+    <h3>Registered Students</h3>
+    <div id="studentList"></div>
+    <br>
+    <button class="submit" onclick="adminLogout()">Logout</button>
+  </div>
+</section>
+
+<script>
+/* ======================
+      Admin Login
+====================== */
+function adminLogin() {
+  const usernameInput = document.getElementById("username").value.trim();
+  const passwordInput = document.getElementById("password").value.trim();
+  const loginMsg = document.getElementById("loginMsg");
+
+  if(usernameInput === "" || passwordInput === "") {
+    loginMsg.innerHTML = "Enter both Username & Password!";
+    return;
+  }
+
+  if(usernameInput === "admin" && passwordInput === "12345") {
+    loginMsg.innerHTML = "";
+    // Show admin dashboard
+    showPage("admin");
+    loadStudents();
+    // Clear login inputs
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+  } else {
+    loginMsg.innerHTML = "Invalid Login!";
+  }
+}
+
+/* ======================
+      Admin Logout
+====================== */
+function adminLogout() {
+  showPage("home");
+}
+
+/* ======================
+      Load Students
+====================== */
+function loadStudents(){
+  const students = JSON.parse(localStorage.getItem("students")) || [];
+  const studentList = document.getElementById("studentList");
+  const dashboardStats = document.getElementById("dashboardStats");
+
+  studentList.innerHTML = "";
+
+  if(students.length === 0){
+    studentList.innerHTML = "<i>No students registered yet.</i>";
+  }
+
+  students.forEach((s, i) => {
+    const studentDiv = document.createElement("div");
+    studentDiv.style.border = "1px solid #ccc";
+    studentDiv.style.padding = "10px";
+    studentDiv.style.marginBottom = "10px";
+    studentDiv.style.borderRadius = "8px";
+
+    studentDiv.innerHTML = `
+      <b>${s.name}</b><br>
+      Course: ${s.course}<br>
+      Status: <span style="color:${s.status==="Approved"?"green":"orange"}">${s.status}</span><br>
+      <button class="admin-btn approve" onclick="approveStudent(${i})">Approve</button>
+      <button class="admin-btn delete" onclick="deleteStudent(${i})">Delete</button>
+    `;
+    studentList.appendChild(studentDiv);
+  });
+
+  dashboardStats.innerHTML =
+    "Total: "+students.length+
+    " | Approved: "+students.filter(s=>s.status==="Approved").length+
+    " | Pending: "+students.filter(s=>s.status==="Pending").length;
+}
+
+/* ======================
+      Approve / Delete
+====================== */
+function approveStudent(i){
+  const students = JSON.parse(localStorage.getItem("students"));
+  students[i].status = "Approved";
+  localStorage.setItem("students", JSON.stringify(students));
+  loadStudents();
+}
+
+function deleteStudent(i){
+  const students = JSON.parse(localStorage.getItem("students"));
+  students.splice(i,1);
+  localStorage.setItem("students", JSON.stringify(students));
+  loadStudents();
+}
+</script>
+
+<footer style="background:#004aad; color:white; padding:25px; font-family:Segoe UI; font-size:14px;">
+  <div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:15px; align-items:center;">
+
+<!-- NAAC Accreditation Section for Footer -->
+<footer style="background:#004aad; color:white; padding:60px 20px; font-family:Segoe UI, sans-serif; font-size:16px; display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; text-align:center;">
+
+  <!-- College Details Clean & Centered -->
+  <div style="font-weight:700; font-size:18px; margin-bottom:6px;">
+    Mahyco Research Foundation Trust's
+  </div>
+  <div style="font-weight:700; font-size:18px; margin-bottom:4px;">
+    Badrinarayan Barwale Mahavidyalaya
+  </div>
+  <div style="font-weight:400; font-size:15px; color:#ddd;">
+    Jalna - 43120, Maharashtra
+  </div>
+
+</footer>
+
+<script>
+
+let generatedCaptcha=0;
+
+function showPage(page){
+document.querySelectorAll("section").forEach(sec=>sec.classList.remove("active"));
+document.getElementById(page).classList.add("active");
+}
+
+function generateCaptcha(){
+let n1=Math.floor(Math.random()*10);
+let n2=Math.floor(Math.random()*10);
+generatedCaptcha=n1+n2;
+captchaText.innerHTML="Captcha: "+n1+" + "+n2+" = ?";
+}
+generateCaptcha();
+
+function registerStudent(){
+let name=sname.value.trim();
+let email=semail.value.trim();
+let mobile=smobile.value.trim();
+let course=scourse.value;
+let captcha=captchaInput.value.trim();
+
+if(name==""||email==""||mobile==""||course==""){
+regMsg.innerHTML="All fields required!";
+return;
+}
+
+if(!/^[0-9]{10}$/.test(mobile)){
+regMsg.innerHTML="Enter valid mobile number!";
+return;
+}
+
+if(parseInt(captcha)!==generatedCaptcha){
+regMsg.innerHTML="Wrong Captcha!";
+generateCaptcha();
+return;
+}
+
+let students=JSON.parse(localStorage.getItem("students"))||[];
+
+if(students.find(s=>s.email===email)){
+regMsg.innerHTML="Email already registered!";
+return;
+}
+
+students.push({name,email,mobile,course,status:"Pending"});
+localStorage.setItem("students",JSON.stringify(students));
+
+regMsg.innerHTML="Registration Successful!";
+
+sname.value=""; semail.value=""; smobile.value=""; scourse.value="";
+captchaInput.value="";
+generateCaptcha();
+}
+
+function login(){
+if(username.value==="admin" && password.value==="12345"){
+loadStudents();
+showPage("admin");
+}else{
+loginMsg.innerHTML="Invalid Login!";
+}
+}
+
+function logout(){ showPage("home"); }
+
+function loadStudents(){
+let students=JSON.parse(localStorage.getItem("students"))||[];
+studentList.innerHTML="";
+
+students.forEach((s,i)=>{
+studentList.innerHTML+=`
+<div style="border:1px solid #ccc;padding:10px;margin-bottom:10px;">
+<b>${s.name}</b><br>
+Course: ${s.course}<br>
+Status: <span style="color:${s.status=="Approved"?"green":"orange"}">${s.status}</span><br>
+<button class="admin-btn approve" onclick="approveStudent(${i})">Approve</button>
+<button class="admin-btn delete" onclick="deleteStudent(${i})">Delete</button>
+</div>`;
+});
+
+dashboardStats.innerHTML=
+"Total: "+students.length+
+" | Approved: "+students.filter(s=>s.status=="Approved").length+
+" | Pending: "+students.filter(s=>s.status=="Pending").length;
+}
+
+function approveStudent(i){
+let students=JSON.parse(localStorage.getItem("students"));
+students[i].status="Approved";
+localStorage.setItem("students",JSON.stringify(students));
+loadStudents();
+}
+
+function deleteStudent(i){
+let students=JSON.parse(localStorage.getItem("students"));
+students.splice(i,1);
+localStorage.setItem("students",JSON.stringify(students));
+loadStudents();
+}
+
+</script>
+</body>
+</html>
